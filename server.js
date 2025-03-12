@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000; 
+const port = 3002; 
 
 app.use(express.static('public'));
 
@@ -18,7 +18,7 @@ app.get('/', (req,res) => {
 
 
 
-app.get('/api/v1/', (req , res) =>{
+app.get('/api/v1/post', (req , res) =>{
      
     
     const post = [
@@ -27,7 +27,7 @@ app.get('/api/v1/', (req , res) =>{
           titolo: 'Ciambellone',
           contenuto: 'lorem',
           immagine: 'public/images/ciambellone.jpeg',
-          tags:  [' lorem', 'lorem', 'basil'],
+          tags:  [' lorem', 'lorem', 'lorem'],
         },
         {
           id: 2,
