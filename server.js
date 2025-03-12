@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 
 
 
-app.get('/api/v1/post', (req, res) => {
+app.get('/bacheca', (req, res) => {
 
 
     const post = [
